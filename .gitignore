@@ -1,0 +1,117 @@
+# 운영체제·편집기
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# 가상환경·로컬 설정·비밀정보
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+secrets*.json
+
+# Jupyter
+.ipynb_checkpoints/
+profile_default/
+
+# 원본/가공 데이터 전체 (안내 문서만 추적)
+data/**
+!data/README.md
+dataset/
+datasets/
+annotations/
+labels/
+*.npy
+*.npz
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# 개인정보가 포함될 수 있는 이미지·영상 샘플
+samples/**
+!samples/README.md
+!samples/videos/
+!samples/videos/README.md
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.webp
+*.gif
+*.tif
+*.tiff
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# 모델 가중치·체크포인트 (Git LFS를 쓰더라도 별도 승인 전 업로드 금지)
+models/**
+!models/README.md
+checkpoints/
+weights/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.safetensors
+*.tflite
+*.pb
+
+# 학습·추론 산출물
+outputs/**
+!outputs/README.md
+runs/
+artifacts/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+*.log
+
+# 압축 파일·임시 파일
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+tmp/
+temp/
+*.tmp
+~$*
+
+# Codex/에이전트 로컬 상태
+.agents/
+.codex/
+

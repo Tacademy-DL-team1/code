@@ -1,0 +1,62 @@
+Tacacademy-DL-team1 code 저장소 파일 안내
+==========================================
+
+번호는 노션 데이터베이스의 상태가 '완료'인 항목을 위에서 아래로 읽은 순서입니다.
+원작성자는 노션의 '사람' 속성을 기준으로 기록했습니다.
+
+01 | 조은나라 | notebooks/detection/01_yolov12_training.ipynb
+   YOLOv12 객체 탐지 모델 학습 및 검증 실험입니다.
+
+02 | 김동혁 | notebooks/detection/02_yolov8s_training.ipynb
+   YOLOv8s 데이터 준비, 학습 및 평가 실험입니다.
+
+03 | 김동혁 | notebooks/detection/03_yolov8l_instance_segmentation.ipynb
+   YOLOv8l-seg 기반 안전고리 인스턴스 분할 실험입니다.
+
+04 | 조은나라 | notebooks/detection/04_yolo11x_segmentation_experiments.ipynb
+   YOLO11x-seg와 YOLO12 계열 분할 설정 비교 실험입니다.
+
+05 | 이용현 | notebooks/detection/05_yolov5s_yolov12s_rtdetr_experiments.ipynb
+   YOLOv5s, YOLOv12s, RT-DETR 계열 모델을 비교한 탐지 실험입니다.
+
+06 | 조하민 | notebooks/preprocessing/06_hook_crop_preprocessing.ipynb
+   안전고리 분류 학습용 crop 데이터를 만드는 전처리 노트북입니다.
+   - src/preprocessing/06_crop_coco_seg_hook_context.py: COCO segmentation용 실행 스크립트
+   - src/preprocessing/06_crop_yolov8seg_hook_context.py: YOLOv8 segmentation용 실행 스크립트
+
+07 | 조은나라 | notebooks/detection/07_rfdetr_seg_large_training.ipynb
+   RF-DETR Segmentation Large 학습, 평가 및 추론 실험입니다.
+
+08 | 조하민 | notebooks/classification/08_efficientnet_hook_classifier.ipynb
+   EfficientNet 기반 안전고리 connected/unconnected 분류 실험입니다.
+
+09 | 조하민 | notebooks/classification/09_efficientnet_hook_classifier_v2.ipynb
+   RF-DETR 검출 결과와 개선된 EfficientNet 분류기를 결합한 후속 실험입니다.
+
+10 | 조은나라 | notebooks/classification/10_vit_hook_classifier.ipynb
+   ViT 기반 안전고리 체결 여부 이진 분류 실험입니다.
+
+11 | 이용현 | src/pipelines/11_rfdetr_vit_video_inference.py
+   RF-DETR, ViT와 ByteTrack을 결합한 영상 안전고리 체결 판별 코드입니다.
+   노션의 모델 가중치 파일은 대용량이므로 저장소에서 제외했습니다.
+
+12 | 이용현 | notebooks/detection/12_vit_bytetrack_efficientnet_pipeline.ipynb
+   ViT, EfficientNet, RF-DETR와 ByteTrack을 조합한 영상 통합 실험입니다.
+
+13 | 김동혁 | notebooks/pipelines/13_rfdetr_efficientnet_advanced_pipeline.ipynb
+   RF-DETR 분할과 EfficientNet 분류를 통합한 최종 고도화 노트북입니다.
+   - src/pipelines/13_construction_safety_team.py: 같은 파이프라인의 실행용 Python 스크립트
+
+14 | 조은나라 | 등록 가능한 소스 파일 없음
+   노션의 'ViT GPU별 처리속도 측정' 항목은 완료 상태지만 코드/첨부 파일이 비어 있습니다.
+   소스가 추가되기 전에는 임의 코드를 생성하지 않으며 이슈로 누락 사실만 추적합니다.
+
+저장소에서 제외한 항목
+-----------------------
+- data/, models/, outputs/, samples/ 아래 실제 파일: 데이터·가중치·생성 결과·미디어
+- src/integrations/notion/: 프로젝트 결과 코드가 아닌 Notion 수집 자동화
+- src/data_tools/audit_untracked_images.py: 로컬 파일 점검용 보조 도구
+- yolov8_instance_segmentation.ipynb: 03번 노트북의 이전 중복본
+
+제외한 코드와 중복본은 삭제하지 않고 상위 폴더의 local-backup/code-excluded에 보관했습니다.
+
