@@ -47,9 +47,9 @@ Tacacademy-DL-team1 code 저장소 파일 안내
    RF-DETR 분할과 EfficientNet 분류를 통합한 최종 고도화 노트북입니다.
    - src/pipelines/13_construction_safety_team.py: 같은 파이프라인의 실행용 Python 스크립트
 
-14 | 조은나라 | 등록 가능한 소스 파일 없음
-   노션의 'ViT GPU별 처리속도 측정' 항목은 완료 상태지만 코드/첨부 파일이 비어 있습니다.
-   소스가 추가되기 전에는 임의 코드를 생성하지 않으며 이슈로 누락 사실만 추적합니다.
+14 | 조은나라 | src/benchmarks/14_vit_gpu_speed_benchmark.py
+   RF-DETR 검출과 ViT 체결 여부 분류를 결합한 영상 파이프라인에서 GPU 처리 속도를 측정합니다.
+   검출 입력·추론, crop, ViT 전처리·추론, 시각화·영상 저장과 전체 FPS를 단계별로 집계합니다.
 
 저장소에서 제외한 항목
 -----------------------
@@ -59,4 +59,3 @@ Tacacademy-DL-team1 code 저장소 파일 안내
 - yolov8_instance_segmentation.ipynb: 03번 노트북의 이전 중복본
 
 제외한 코드와 중복본은 삭제하지 않고 상위 폴더의 local-backup/code-excluded에 보관했습니다.
-
