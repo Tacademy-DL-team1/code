@@ -1,20 +1,20 @@
-name: 코드 타임라인 등록
-description: 노션 완료 항목의 코드를 순서대로 정리합니다.
+name: 코드 작업 등록
+description: 코드 추가·수정 작업의 목적과 공개 전 점검 사항을 정리합니다.
 title: "[Code] "
-labels: ["code", "timeline"]
+labels: ["code"]
 body:
-  - type: input
-    id: order
-    attributes:
-      label: 노션 완료 순서
-      placeholder: "예: 01"
-    validations:
-      required: true
   - type: input
     id: author
     attributes:
-      label: 원작성자(노션)
+      label: 작성자
       placeholder: "예: 김동혁"
+    validations:
+      required: true
+  - type: input
+    id: target_file
+    attributes:
+      label: 대상 파일
+      placeholder: "예: src/pipelines/video_inference.py"
     validations:
       required: true
   - type: textarea
@@ -32,5 +32,4 @@ body:
         - [ ] 데이터·이미지·영상이 포함되지 않았습니다.
         - [ ] 모델 가중치와 생성 결과가 포함되지 않았습니다.
         - [ ] API 키·토큰·개인 경로가 포함되지 않았습니다.
-        - [ ] 코드 머리말에 요약과 원작성자를 기록했습니다.
-
+        - [ ] 코드 머리말에 요약과 작성자를 기록했습니다.
